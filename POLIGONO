@@ -1,0 +1,21 @@
+package com.mycompany.pricipal1;
+
+public abstract class Poligono {
+    protected int NLados ;
+    
+    public Poligono(int NLados) {
+        this.NLados = NLados;
+    }
+
+    public int getNLados() {
+        return NLados;
+    }
+
+    @Override
+    public String toString() {
+        return  "El Número de Lados es : " + NLados ;
+    }
+    
+    public abstract double area();
+    
+}
